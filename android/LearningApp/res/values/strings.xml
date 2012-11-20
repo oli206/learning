@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">LearningApp</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="title_activity_main">Menu Settings</string>   
+	<string name="menu_settings">title</string>
+    <string name="button_send">Send</string>
+
+</resources>
