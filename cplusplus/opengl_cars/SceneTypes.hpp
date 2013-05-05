@@ -5,9 +5,9 @@ const float piover180 =	0.0174532925f;
 
 struct Coordinate3f
 {
-	GLfloat x;
-	GLfloat y;
-	GLfloat z;
+	float x;
+	float y;
+	float z;
 };
 
 struct Component
