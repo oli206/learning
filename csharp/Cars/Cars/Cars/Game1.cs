@@ -19,9 +19,13 @@ namespace Cars
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Texture2D car;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferHeight = 720;
+            graphics.PreferredBackBufferWidth = 1280;
             Content.RootDirectory = "Content";
         }
 
@@ -48,6 +52,7 @@ namespace Cars
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            car = Content.Load<Texture2D>("car");
         }
 
         /// <summary>
@@ -84,6 +89,9 @@ namespace Cars
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            spriteBatch.Draw(car, new Vector2(130, 320), Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
