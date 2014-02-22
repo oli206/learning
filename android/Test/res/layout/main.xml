@@ -8,11 +8,12 @@
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:text="Log Weight"
-            android:id="@+id/button" android:layout_gravity="center_horizontal" android:layout_weight="0.5"/>
+            android:id="@+id/button" android:layout_gravity="center_horizontal" android:layout_weight="0.5"
+            android:onClick="openLogWeight"/>
     <Button
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:text="View History"
-            android:id="@+id/button2" android:layout_weight="0.5"/>
+            android:id="@+id/button2" android:layout_weight="0.5" android:onClick="openViewHistory"/>
 </LinearLayout>
 
