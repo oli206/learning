@@ -7,8 +7,12 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:id="@+id/editText2" android:text="Insert your weight:" android:layout_gravity="center"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText" android:layout_weight="0.5"/>
+            android:id="@+id/editText"/>
 </LinearLayout>
 
